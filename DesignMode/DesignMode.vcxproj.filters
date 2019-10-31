@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Singleton">
+      <UniqueIdentifier>{67b4b4ae-2f74-43c0-a4b9-f988eb9cecef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SimpleFactory">
+      <UniqueIdentifier>{4050997d-efa7-4953-868b-95630c10fc04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Factory">
+      <UniqueIdentifier>{2340ebb3-3df6-433a-8255-421900a7b740}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\AbstractFactory">
+      <UniqueIdentifier>{9ed22b57-ccdc-4145-8ff9-c0cd13907fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Builder">
+      <UniqueIdentifier>{2cc09acb-6bed-464a-93e6-8574d4698fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Adapter">
+      <UniqueIdentifier>{678d361b-6fe5-4493-a1c0-85680e9ba64c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Bridge">
+      <UniqueIdentifier>{0331e4aa-82e7-4950-a27b-f09d8652c2e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Decorator">
+      <UniqueIdentifier>{4142a955-665e-4e32-896d-989f284c2b3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Facade">
+      <UniqueIdentifier>{1141e645-6d33-4c48-93fb-570ee8264b54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Proxy">
+      <UniqueIdentifier>{66b47946-d75f-4a40-8b30-59508d3f7c57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton\HungrySingleton.h">
+      <Filter>源文件\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton\LazySingleton.h">
+      <Filter>源文件\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFactory\SimpleFactory.h">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFactory\Product.h">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFactory\Products.h">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory\Factory.h">
+      <Filter>源文件\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory\Factorys.h">
+      <Filter>源文件\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\AbstractFactory.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\AbstractFactorys.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\AProduct.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\BProduct.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\AProducts.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\BProducts.h">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\Director.h">
+      <Filter>源文件\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\Builder.h">
+      <Filter>源文件\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\Builders.h">
+      <Filter>源文件\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\ComplexProduct.h">
+      <Filter>源文件\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter\Target.h">
+      <Filter>源文件\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter\Adapter.h">
+      <Filter>源文件\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter\Adapteree1.h">
+      <Filter>源文件\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge\Abstract.h">
+      <Filter>源文件\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge\Implement.h">
+      <Filter>源文件\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge\Concrete.h">
+      <Filter>源文件\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge\Implements.h">
+      <Filter>源文件\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Derocator\DAbstract.h">
+      <Filter>源文件\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Derocator\DConcrete.h">
+      <Filter>源文件\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Derocator\Decorator.h">
+      <Filter>源文件\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Facade\Facade.h">
+      <Filter>源文件\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Facade\Subsystems.h">
+      <Filter>源文件\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\Proxy.h">
+      <Filter>源文件\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\Subject.h">
+      <Filter>源文件\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\RealSubject.h">
+      <Filter>源文件\Proxy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DesignMode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton\HungrySingleton.cpp">
+      <Filter>源文件\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton\LazySingleton.cpp">
+      <Filter>源文件\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleFactory\SimpleFactory.cpp">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleFactory\Products.cpp">
+      <Filter>源文件\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Factory\Factorys.cpp">
+      <Filter>源文件\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\AbstractFactorys.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\AProducts.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\BProducts.cpp">
+      <Filter>源文件\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder\Director.cpp">
+      <Filter>源文件\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder\Builders.cpp">
+      <Filter>源文件\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder\ComplexProduct.cpp">
+      <Filter>源文件\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="Adapter\Adapter.cpp">
+      <Filter>源文件\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="Adapter\Adapteree1.cpp">
+      <Filter>源文件\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge\Concrete.cpp">
+      <Filter>源文件\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge\Implements.cpp">
+      <Filter>源文件\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="Derocator\DConcrete.cpp">
+      <Filter>源文件\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Derocator\Decorators.h">
+      <Filter>源文件\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Derocator\Decorators.cpp">
+      <Filter>源文件\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Facade\Facade.cpp">
+      <Filter>源文件\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Facade\Subsystems.cpp">
+      <Filter>源文件\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\Proxy.cpp">
+      <Filter>源文件\Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\RealSubject.cpp">
+      <Filter>源文件\Proxy</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
