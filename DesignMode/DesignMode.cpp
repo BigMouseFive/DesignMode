@@ -18,6 +18,7 @@ int main(int argc, char* argv[])
 	Test::Decorator();
 	Test::Facade();
 	Test::Proxy();
+	Test::Command();
 	system("pause");
 	return 0;
 }

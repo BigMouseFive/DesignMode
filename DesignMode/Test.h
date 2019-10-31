@@ -12,4 +12,5 @@ public:
 	static void Decorator();
 	static void Facade();
 	static void Proxy();
+	static void Command();
 };

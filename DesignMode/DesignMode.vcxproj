@@ -167,9 +167,14 @@
     <ClInclude Include="Builder\Builders.h" />
     <ClInclude Include="Builder\ComplexProduct.h" />
     <ClInclude Include="Builder\Director.h" />
+    <ClInclude Include="Command\Command.h" />
+    <ClInclude Include="Command\Commands.h" />
+    <ClInclude Include="Command\Invoker.h" />
+    <ClInclude Include="Command\Receiver.h" />
     <ClInclude Include="Derocator\DAbstract.h" />
     <ClInclude Include="Derocator\DConcrete.h" />
     <ClInclude Include="Derocator\Decorator.h" />
+    <ClInclude Include="Derocator\Decorators.h" />
     <ClInclude Include="Facade\Facade.h" />
     <ClInclude Include="Facade\Subsystems.h" />
     <ClInclude Include="Factory\Factory.h" />
@@ -197,9 +202,11 @@
     <ClCompile Include="Builder\Builders.cpp" />
     <ClCompile Include="Builder\ComplexProduct.cpp" />
     <ClCompile Include="Builder\Director.cpp" />
+    <ClCompile Include="Command\Commands.cpp" />
+    <ClCompile Include="Command\Invoker.cpp" />
+    <ClCompile Include="Command\Receiver.cpp" />
     <ClCompile Include="Derocator\DConcrete.cpp" />
     <ClCompile Include="Derocator\Decorators.cpp" />
-    <ClCompile Include="Derocator\Decorators.h" />
     <ClCompile Include="DesignMode.cpp" />
     <ClCompile Include="Facade\Facade.cpp" />
     <ClCompile Include="Facade\Subsystems.cpp" />

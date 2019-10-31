@@ -14,6 +14,8 @@
 #include "Derocator\DConcrete.h"
 #include "Facade\Facade.h"
 #include "Proxy\Proxy.h"
+#include "Command\Invoker.h"
+#include "Command\Commands.h"
 
 // 饿汉式单例模式
 //   1. 在类初始化的时候就已经创建单例对象
@@ -226,5 +228,25 @@ void Test::Proxy(){
 	::Proxy* p = new ::Proxy();
 	p->Request();
 	delete p;
+	printf("======================================================\n");
+}
+
+
+// 命令模式
+//   1. 将发送者和接收者分离开来，发送者不需要知道命令的具体实现
+//	 2. 抽象出命令类，并将具体命令类化
+void Test::Command(){
+	printf("12. Command\n");
+	Receiver* r = new Receiver();
+	::Command* c1 = new Command1(r);
+	::Command* c2 = new Command2(r);
+	Invoker* v = new Invoker(c1);
+	v->Call();
+	v->SetCommand(c2);
+	v->Call();
+	delete r;
+	delete c1;
+	delete c2;
+	delete v;
 	printf("======================================================\n");
 }

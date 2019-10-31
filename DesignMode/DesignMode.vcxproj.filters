@@ -43,6 +43,9 @@
     <Filter Include="源文件\Proxy">
       <UniqueIdentifier>{66b47946-d75f-4a40-8b30-59508d3f7c57}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Command">
+      <UniqueIdentifier>{d23ae196-e8b9-4c8c-a58f-f2b9141d1956}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -153,6 +156,21 @@
     <ClInclude Include="Proxy\RealSubject.h">
       <Filter>源文件\Proxy</Filter>
     </ClInclude>
+    <ClInclude Include="Command\Invoker.h">
+      <Filter>源文件\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\Command.h">
+      <Filter>源文件\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\Commands.h">
+      <Filter>源文件\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\Receiver.h">
+      <Filter>源文件\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Derocator\Decorators.h">
+      <Filter>源文件\Decorator</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DesignMode.cpp">
@@ -209,12 +227,6 @@
     <ClCompile Include="Derocator\DConcrete.cpp">
       <Filter>源文件\Decorator</Filter>
     </ClCompile>
-    <ClCompile Include="Derocator\Decorators.h">
-      <Filter>源文件\Decorator</Filter>
-    </ClCompile>
-    <ClCompile Include="Derocator\Decorators.cpp">
-      <Filter>源文件\Decorator</Filter>
-    </ClCompile>
     <ClCompile Include="Facade\Facade.cpp">
       <Filter>源文件\Facade</Filter>
     </ClCompile>
@@ -226,6 +238,18 @@
     </ClCompile>
     <ClCompile Include="Proxy\RealSubject.cpp">
       <Filter>源文件\Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\Invoker.cpp">
+      <Filter>源文件\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\Commands.cpp">
+      <Filter>源文件\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\Receiver.cpp">
+      <Filter>源文件\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Derocator\Decorators.cpp">
+      <Filter>源文件\Decorator</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
