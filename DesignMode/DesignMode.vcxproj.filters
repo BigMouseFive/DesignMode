@@ -46,6 +46,18 @@
     <Filter Include="源文件\Command">
       <UniqueIdentifier>{d23ae196-e8b9-4c8c-a58f-f2b9141d1956}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Iterator">
+      <UniqueIdentifier>{e95e4667-abdc-4bb4-9c26-f356605e4438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Mediator">
+      <UniqueIdentifier>{6b69cc26-8252-4293-95e1-9cb18185ce78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Observer">
+      <UniqueIdentifier>{68286341-65ff-4320-9ae6-af5db8f7c9f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\StateMacine">
+      <UniqueIdentifier>{23dae378-1706-4fbb-9e28-594be09a1e50}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -171,6 +183,60 @@
     <ClInclude Include="Derocator\Decorators.h">
       <Filter>源文件\Decorator</Filter>
     </ClInclude>
+    <ClInclude Include="Iterator\Iterator.h">
+      <Filter>源文件\Iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="Iterator\Iterators.h">
+      <Filter>源文件\Iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="Iterator\Container.h">
+      <Filter>源文件\Iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="Mediator\Mediator.h">
+      <Filter>源文件\Mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="Mediator\Mediators.h">
+      <Filter>源文件\Mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="Mediator\Colleague.h">
+      <Filter>源文件\Mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="Mediator\Colleagues.h">
+      <Filter>源文件\Mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Subject.h">
+      <Filter>源文件\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Observers.h">
+      <Filter>源文件\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Observer.h">
+      <Filter>源文件\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Subjects.h">
+      <Filter>源文件\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine\ActionHandler.h">
+      <Filter>源文件\StateMacine</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine\BaseState.h">
+      <Filter>源文件\StateMacine</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine\OperationAdapter.h">
+      <Filter>源文件\StateMacine</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine\OperationTarget.h">
+      <Filter>源文件\StateMacine</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine\Player.h">
+      <Filter>源文件\StateMacine</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine\PlayerEquipState.h">
+      <Filter>源文件\StateMacine</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine\SeniorState.h">
+      <Filter>源文件\StateMacine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DesignMode.cpp">
@@ -250,6 +316,39 @@
     </ClCompile>
     <ClCompile Include="Derocator\Decorators.cpp">
       <Filter>源文件\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Mediator\Mediators.cpp">
+      <Filter>源文件\Mediator</Filter>
+    </ClCompile>
+    <ClCompile Include="Mediator\Colleagues.cpp">
+      <Filter>源文件\Mediator</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\Subject.cpp">
+      <Filter>源文件\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\Observers.cpp">
+      <Filter>源文件\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\Subjects.cpp">
+      <Filter>源文件\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachine\ActionHandler.cpp">
+      <Filter>源文件\StateMacine</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachine\BaseState.cpp">
+      <Filter>源文件\StateMacine</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachine\OperationAdapter.cpp">
+      <Filter>源文件\StateMacine</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachine\Player.cpp">
+      <Filter>源文件\StateMacine</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachine\PlayerEquipState.cpp">
+      <Filter>源文件\StateMacine</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachine\SeniorState.cpp">
+      <Filter>源文件\StateMacine</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -16,6 +16,13 @@
 #include "Proxy\Proxy.h"
 #include "Command\Invoker.h"
 #include "Command\Commands.h"
+#include "Iterator\Iterators.h"
+#include "Mediator\Colleagues.h"
+#include "Mediator\Mediators.h"
+#include "Observer\Observers.h"
+#include "Observer\Subjects.h"
+#include "StateMachine\OperationAdapter.h"
+#include "StateMachine\Player.h"
 
 // 饿汉式单例模式
 //   1. 在类初始化的时候就已经创建单例对象
@@ -248,5 +255,109 @@ void Test::Command(){
 	delete c1;
 	delete c2;
 	delete v;
+	printf("======================================================\n");
+}
+
+
+
+// 迭代器模式
+//   1. 这个例子模仿写了一个list容器以及对应的迭代器
+//	 2. 遇到的问题：
+//		2.1 模板类不能分离编译，所以成员函数的实现必须在类中完成，只能有一个头文件(*.h)
+//		2.2 类模板成员函数不可以是虚函数，因为编译器实在运行的时候才能确定模板函数的类型的，而在类初始化的时候就要将虚函数填写到虚函数表中。
+
+void Test::Iterator(){
+	printf("13. Iterator\n");
+	Container<int> a;
+	a.PushBack(1);
+	a.PushBack(2);
+	a.PushBack(3);
+	::Iterator<int>* iter = a.Begin();
+	::Iterator<int>* end =  a.End();
+	for (; *iter != end; (*iter)++){
+		printf("%d", **iter);
+	}
+	delete iter;
+	printf("\n");
+	a.PopBack();
+	for (iter = a.Begin(); *iter != end; (*iter)++){
+		printf("%d", **iter);
+	}
+	delete iter;
+	iter = a.Begin();
+	printf("\n");
+	a.Insert(*iter, 4);
+	a.Insert(*iter, 5);
+	a.Insert(*iter, 6);
+	for (iter = a.Begin(); *iter != end; (*iter)++){
+		printf("%d", **iter);
+	}
+	printf("\n");
+	delete iter;
+	delete end;
+	printf("======================================================\n");
+}
+
+
+// 中介模式
+//	 1. 可以将类之间的通信全部都交由中介类来完成
+//	 2. 减少类之间的关联性，降低耦合
+void Test::Mediator(){
+	printf("14. Mediator\n");
+	Colleague* c1 = new Colleague1();
+	Colleague* c2 = new Colleague2();
+	Colleague* c3 = new Colleague3();
+	::Mediator* m = new Mediator1();
+	m->Register(1, c1);
+	m->Register(2, c2);
+	m->Register(3, c3);
+	c1->SendMsg(2);
+	c1->SendMsg(3);
+	c2->SendMsg(3);
+	c3->SendMsg(2);
+	delete m;
+	delete c1, c2, c3;
+	printf("======================================================\n");
+}
+
+
+// 观察者模式
+//   1. 发布/订阅模式、模型/视图模式
+void Test::Observer(){
+	printf("15. Observer\n");
+	::Observer* o = new Observer1();
+	OSubject* s = new OSubject1();
+	s->Attach(o);
+	s->SetState(8);
+	s->SetState(12);
+	s->SetState(83);
+	s->SetState(48);
+	s->SetState(34);
+	s->SetState(28);
+	s->Detach(o);
+	s->SetState(1);
+	s->SetState(2);
+	s->SetState(3);
+	delete o;
+	delete s;
+	printf("======================================================\n");
+}
+
+//  状态机模式
+//    1. 将每一个状态都抽象成一个类，继承于抽象状态基类，基类中定义所有的状态转换条件为虚函数。
+//	  2. 每个派生状态类，根据实际情况去重载对应的虚函数。
+void Test::StateMachine(){
+	printf("16. StateMachine\n");
+	Player* player = new Player();
+	OperationTarget* operation = new OperationAdapter();
+	operation->SetPlayer(player);
+	operation->KeyC();
+	operation->KeyWPressed();
+	operation->KeyCtrlPressed();
+	operation->KeyX();
+	operation->KeyMouseLeftPressed();
+	operation->KeyMouseLeftReleased();
+	operation->KeySpace();
+	operation->KeyWReleased();
 	printf("======================================================\n");
 }

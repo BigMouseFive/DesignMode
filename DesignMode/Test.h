@@ -13,4 +13,8 @@ public:
 	static void Facade();
 	static void Proxy();
 	static void Command();
+	static void Iterator();
+	static void Mediator();
+	static void Observer();
+	static void StateMachine();
 };

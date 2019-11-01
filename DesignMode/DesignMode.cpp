@@ -3,7 +3,8 @@
 #include <Windows.h>
 #include <cstdio>
 #include "Test.h"
-
+#include <list>
+#include <vector>
 
 int main(int argc, char* argv[])
 {
@@ -19,7 +20,11 @@ int main(int argc, char* argv[])
 	Test::Facade();
 	Test::Proxy();
 	Test::Command();
+	Test::Iterator();
+	Test::Mediator();
+	Test::Observer();
+	Test::StateMachine();
 	system("pause");
-	return 0;
+	return 0; 
 }
 
