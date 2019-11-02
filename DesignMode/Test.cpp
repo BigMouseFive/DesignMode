@@ -23,6 +23,8 @@
 #include "Observer\Subjects.h"
 #include "StateMachine\OperationAdapter.h"
 #include "StateMachine\Player.h"
+#include "Strategy\Context.h"
+#include "Strategy\Strategys.h"
 
 // 饿汉式单例模式
 //   1. 在类初始化的时候就已经创建单例对象
@@ -359,5 +361,18 @@ void Test::StateMachine(){
 	operation->KeyMouseLeftReleased();
 	operation->KeySpace();
 	operation->KeyWReleased();
+	printf("======================================================\n");
+}
+
+// 策略模式
+//	 1. 对于搜索算法，可以将搜索算法放在同一个类中，但是这样日后要添加新的搜索算法会违背“开闭原则”
+void Test::Strategy(){
+	printf("17. Strategy\n");
+	Context* c = new Context();
+	c->SetStrategy(Strategy1::Instance());
+	c->Sort();
+	c->SetStrategy(Strategy2::Instance());
+	c->Sort();
+	delete c;
 	printf("======================================================\n");
 }

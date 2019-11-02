@@ -17,4 +17,5 @@ public:
 	static void Mediator();
 	static void Observer();
 	static void StateMachine();
+	static void Strategy();
 };

@@ -24,6 +24,7 @@ int main(int argc, char* argv[])
 	Test::Mediator();
 	Test::Observer();
 	Test::StateMachine();
+	Test::Strategy();
 	system("pause");
 	return 0; 
 }

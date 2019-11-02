@@ -58,6 +58,9 @@
     <Filter Include="源文件\StateMacine">
       <UniqueIdentifier>{23dae378-1706-4fbb-9e28-594be09a1e50}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Strategy">
+      <UniqueIdentifier>{3cb9d2a2-ea82-470a-ae2e-e63568255061}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -237,6 +240,15 @@
     <ClInclude Include="StateMachine\SeniorState.h">
       <Filter>源文件\StateMacine</Filter>
     </ClInclude>
+    <ClInclude Include="Strategy\Context.h">
+      <Filter>源文件\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\Strategy.h">
+      <Filter>源文件\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\Strategys.h">
+      <Filter>源文件\Strategy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DesignMode.cpp">
@@ -349,6 +361,12 @@
     </ClCompile>
     <ClCompile Include="StateMachine\SeniorState.cpp">
       <Filter>源文件\StateMacine</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy\Context.cpp">
+      <Filter>源文件\Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy\Strategys.cpp">
+      <Filter>源文件\Strategy</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
